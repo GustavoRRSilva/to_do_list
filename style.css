@@ -1,12 +1,13 @@
 body {
-  background-image: url(assets/background.webp);
+  background:linear-gradient(#80A4ED,#C0C0C0);
+  height: 100vh;
 }
 * {
   margin: 0;
   padding: 0;
   font-weight: bold;
   text-align: center;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   color: white;
 }
 button {
@@ -16,12 +17,22 @@ p,
 button {
   display: inline;
 }
-form{
-    padding: 1rem;
+form {
+  padding: 1rem;
+}
+ul{
+  display: flex;
+  justify-content: center;
+}
+li{
+  background-color: #00008b;
+  width: 20vw;
+  border-radius: 10px;
 }
 .principal__tarefa {
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  color: #c0c0c0;
 }
 .principal__enviar {
   background-color: #006400;
@@ -48,9 +59,9 @@ form{
   border-radius: 3px;
 }
 .principal__tarefas {
-    list-style-type: none;
-    display: block;
+  list-style-type: none;
+  display: block;
 }
-.principal__tarefa:focus{
-    border: solid 3px goldenrod;
+.principal__tarefa:focus {
+  border: solid 3px goldenrod;
 }
