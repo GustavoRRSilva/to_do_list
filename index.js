@@ -2,11 +2,18 @@ var botaoEnviar = document.querySelector(".principal__enviar");
 var form = document.querySelector(".principal__form");
 var lista = document.querySelector(".principal__lista");
 botaoEnviar.addEventListener("click", (event) => {
-  event.preventDefault();
-  CriaObjetosLista(form);
-  botaoDeletar(lista);
-  botaoFeito(lista);
-  form.reset();
+  var texto = document.querySelector(".principal__tarefa").value
+  if(texto.length>0){
+    event.preventDefault();
+    CriaObjetosLista(form);
+    botaoDeletar(lista);
+    botaoFeito(lista);
+    form.reset();
+  }
+  else{
+    alert("tarefa não pode ser vazia")
+  }
+  //form.reset();
 });
 
 function CriaObjetosLista(form) {

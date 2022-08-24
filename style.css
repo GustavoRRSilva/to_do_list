@@ -1,14 +1,14 @@
 body {
-  background:linear-gradient(#80A4ED,#C0C0C0);
+  background:#53d6d7;
   height: 100vh;
 }
 * {
   margin: 0;
   padding: 0;
-  font-weight: bold;
+  
   text-align: center;
   font-family: "Kanit", sans-serif;
-  color: white;
+  color: black;
 }
 button {
   margin: 0;
@@ -23,11 +23,12 @@ form {
 ul{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 li{
-  background-color: #00008b;
-  width: 20vw;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .principal__tarefa {
   padding: 0.5rem 1rem;
@@ -35,7 +36,7 @@ li{
   color: #c0c0c0;
 }
 .principal__enviar {
-  background-color: #006400;
+  background-color: #8bebeb;
   border: none;
   border-radius: 10px;
   padding: 0.5rem;
@@ -49,19 +50,24 @@ li{
   margin-left: 5px;
 }
 .principal__excluir {
-  background-color: red;
+  background-color: #a7f5f5;
   border: none;
   border-radius: 3px;
 }
 .principal__feito {
-  background-color: #006400;
+  background-color: #a7f5f5;
   border: none;
   border-radius: 3px;
 }
 .principal__tarefas {
   list-style-type: none;
   display: block;
+  background-color: aqua;
+  padding: 0.8rem;
 }
 .principal__tarefa:focus {
   border: solid 3px goldenrod;
+}
+.principal__texto{
+  font-weight: bold;
 }
