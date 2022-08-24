@@ -1,0 +1,56 @@
+body {
+  background-image: url(assets/background.webp);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+}
+button {
+  margin: 0;
+}
+p,
+button {
+  display: inline;
+}
+form{
+    padding: 1rem;
+}
+.principal__tarefa {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.principal__enviar {
+  background-color: #006400;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.nome__riscado {
+  text-decoration: line-through;
+}
+.principal__excluir,
+.principal__feito {
+  padding: 0.6rem;
+  margin-left: 5px;
+}
+.principal__excluir {
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+.principal__feito {
+  background-color: #006400;
+  border: none;
+  border-radius: 3px;
+}
+.principal__tarefas {
+    list-style-type: none;
+    display: block;
+}
+.principal__tarefa:focus{
+    border: solid 3px goldenrod;
+}
